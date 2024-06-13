@@ -1,0 +1,26 @@
+.app {
+  width: 1695px;
+  height: 933px;
+
+  display: grid;
+  grid-template-columns: 500px 596px 595px;
+  grid-template-rows: 230px 701px;
+  gap: 2px;
+}
+
+.marketingProgram {
+  grid-row: span 2;
+}
+
+.settings {
+}
+
+.categories {
+  height: 230px;
+}
+
+.services {
+}
+
+.allServices {
+}

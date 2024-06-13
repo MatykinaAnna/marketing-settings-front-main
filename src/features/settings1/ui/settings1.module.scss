@@ -1,0 +1,249 @@
+@import '../../../shared/styles/variables.scss';
+
+.body {
+  box-sizing: border-box;
+  border-radius: $b-radius;
+  border: solid 1px $green-main;
+  background-color: $green-bg-2;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 54px 20px 20px 136px 50px 600px;
+  grid-template-columns: 610px;
+  gap: 8px;
+
+  background-color: white;
+
+  .header {
+    background-color: $green-bg-1;
+    box-sizing: border-box;
+    border-radius: $b-radius $b-radius 0px 0px;
+    padding-left: 4px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+    .block {
+      box-sizing: border-box;
+      .rowFirst {
+        margin-bottom: 5px;
+      }
+      .row {
+        display: flex;
+        padding-left: 5px;
+
+        .arrow {
+          width: 25px;
+          height: 20px;
+          background-color: aquamarine;
+        }
+        .del {
+          margin-right: 46px;
+        }
+        button.btn_documents {
+          display: flex;
+          height: 20px;
+          width: 110px;
+          border: solid 1px $green-main;
+          align-items: center;
+          padding-left: 5px;
+          margin-left: 185px;
+          span {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+
+    .btnOk {
+      width: 84px;
+      height: 44px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      //justify-content: center;
+      border: solid 1px $green-main;
+      box-sizing: border-box;
+      font-weight: bold;
+      padding-left: 2px;
+
+      .img_arrow {
+        margin-left: 2px;
+        margin-right: 15px;
+        background: url(../../../shared/icons/arrow02.png);
+        height: 44px;
+        width: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .btnOk:disabled,
+    .btnOk[disabled] {
+      background-color: $grey-bg-1;
+      color: $grey-txt;
+      .img_arrow {
+        margin-right: 15px;
+        background: url(../../../shared//icons/arrow01.png);
+        height: 100%;
+        width: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .btnOk:hover {
+      background-color: $green-main;
+      .img_arrow {
+        margin-right: 15px;
+        background: url(../../../shared//icons/arrow03.png);
+        height: 100%;
+        width: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .btnOk:focus {
+      background-color: $dark-green;
+      color: white;
+      .img_arrow {
+        margin-right: 15px;
+        background: url(../../../shared//icons/arrow04.png);
+        height: 100%;
+        width: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    span.header {
+      margin-right: 175px;
+    }
+
+    img {
+      cursor: pointer;
+    }
+    .saveBtn {
+      width: 20px;
+      height: 100%;
+      background: url('../../../shared/icons/save.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .saveBtn:disabled,
+    .saveBtn[disabled] {
+      opacity: 0.5;
+    }
+  }
+
+  .name {
+    height: 20px;
+    align-items: center;
+    padding-left: 12px;
+  }
+
+  .discount {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    font-weight: bold;
+    .label {
+      padding-left: 10px;
+      font-weight: normal;
+    }
+    .discountValue {
+      margin-left: 10px;
+    }
+
+    .active {
+      width: 135px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+      justify-content: end;
+      margin-right: 5px;
+    }
+  }
+  .description {
+    margin-top: 4px;
+    margin-left: 6px;
+    width: 591px;
+    height: 140px;
+    border: solid 1px #999999;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+}
+
+.datepicker_ico {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 3px;
+  background-color: #d6d6d6;
+}
+
+.datepicker_container {
+  position: relative;
+  border: 1px solid #999999;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: #fff;
+  cursor: pointer;
+  width: 80px;
+
+  input {
+    font-size: 11px;
+    width: 70px;
+  }
+
+  // &.disabled {
+  //   opacity: $disabled-opacity;
+  //   pointer-events: none;
+  // }
+  // &.hidden input {
+  //   visibility: hidden;
+  // }
+}
+
+.rowSearch {
+  height: 20px;
+  display: flex;
+  margin-top: 27px;
+
+  .search {
+    width: 361px;
+  }
+
+  .searchRole {
+    width: 198px;
+  }
+}
+
+.settings1_body__i553C .settings1_header__buvAC span {
+  margin-right: 0px !important;
+}
+
+.rowInf {
+  height: 100%;
+
+  margin-left: 4px;
+  display: flex;
+
+  .all {
+    margin-bottom: 10px;
+  }
+  .renderDcList {
+    overflow-y: scroll;
+    height: 580px;
+  }
+}

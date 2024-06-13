@@ -1,0 +1,33 @@
+@import '../../../shared/styles/variables.scss';
+
+.app {
+  width: 1695px;
+  height: 877px;
+
+  display: grid;
+  grid-template-columns: 1081px 612px;
+  grid-template-rows: 54px 240px 637px;
+  gap: 2px;
+}
+
+.header {
+  background-color: $green-bg-2;
+  box-sizing: border-box;
+  border-radius: $b-radius;
+  border: solid 1px $green-main;
+}
+.plugGridRow2 {
+  grid-row: span 2;
+}
+.plugGridRow3 {
+  grid-row: span 3;
+}
+
+.plugGridRow4 {
+  grid-row: span 4;
+}
+.list {
+  grid-row: span 2;
+}
+.markProgram {
+}
